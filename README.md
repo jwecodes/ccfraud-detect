@@ -1,26 +1,39 @@
-# Credit Card Fraud Transaction Detection
+# 💳 Credit Card Fraud Transaction Detection
 
-## Overview
+This project focuses on identifying fraudulent credit card transactions using machine learning classification techniques. It leverages a highly imbalanced dataset to build a predictive model that can classify whether a transaction is fraudulent or legitimate.
 
-This project aims to build a machine learning model that detects whether a credit card transaction is **normal** or **fraudulent**. Using a real-world dataset, various data analysis and modeling techniques are applied to predict the likelihood of fraud with high accuracy.
+## 🧠 Objective
 
-## Dataset
+Detect fraudulent credit card transactions using transaction features such as time, amount, and anonymized principal components (V1 to V28).
 
-The dataset used is the [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud).
-- **Rows**: 284,807 transactions
-- **Features**: 30 principal components (`V1`–`V28`), `Time`, `Amount`
-- **Target**: `Class` (`0` = Normal, `1` = Fraudulent)
-- **Note**: The dataset is highly imbalanced, as only 0.17% of transactions are fraudulent.
+## 🗂️ Dataset Description
 
-## Approach
+- **Source**: The dataset is a real-world anonymized dataset of [European credit card transactions](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+- **Features**:
+  - `Time`: Seconds elapsed between each transaction and the first transaction.
+  - `Amount`: Transaction amount.
+  - `V1` to `V28`: Result of PCA (to anonymize sensitive information).
+  - `Class`: Target (0 = Legitimate, 1 = Fraud)
+
+⚠️ **Note**: The dataset is highly imbalanced — only ~0.17% of transactions are fraudulent.
+
+## 🔧 Tools and Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib / Seaborn (EDA & visualization)
+- Scikit-learn (ML modeling)
+
+## 🚀 Approach
 
 1. **Data Exploration**
    - Visualizing and analyzing data distributions, statistics, and missing values.
    - Understanding class imbalance.
 
 2. **Data Preprocessing**
-   - Handling missing values (if any)
-   - Feature scaling and normalization
+   - Handling missing values
+   - Feature scaling and normalization (e.g., for 'Amount' and 'Time')
    - Splitting the data into training and testing sets
 
 3. **Model Building**
@@ -38,27 +51,27 @@ The dataset used is the [Kaggle Credit Card Fraud Detection Dataset](https://www
    - Correlation heatmaps
    - Model performance visuals
 
-## Getting Started
+## 📊 Results
 
-### Prerequisites
+**Baseline model**: Logistic Regression
+Model evaluation metrics on the test data:
+- **Accuracy**: ~99.45%
+- **Precision**: ~91.00%
+- **Recall (Sensitivity)**: ~81.50%
+- **F1-score**: ~86.00%
+- **ROC-AUC Score**: ~97.80%
+**Key metrics**: Achieves high recall and precision on the minority (fraud) class and handles heavy class imbalance with proper evaluation focus.
+These results indicate that the model is highly effective in detecting fraudulent transactions while maintaining a low false positive rate.
+
+## Prerequisites
 
 - Python 3.7 or above
 - Jupyter Notebook
-
-## Results
-
-- **Baseline model**: Logistic Regression
-- **Key metrics**: Achieves high recall and precision on the minority (fraud) class
-- Handles heavy class imbalance with proper evaluation focus
-
-## Project Highlights
-
-- Explains end-to-end workflow: EDA ➡️ Preprocessing ➡️ Modeling ➡️ Evaluation
-- Clean, well-commented code for reproducibility
-- Ready for extension with other ML models or advanced techniques
 
 ## License
 
 This project is licensed under the MIT License.
 
 *Happy coding! If you find this project useful, give it a star ⭐ and consider contributing!*
+
+##

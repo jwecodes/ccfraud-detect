@@ -53,15 +53,15 @@ Detect fraudulent credit card transactions using transaction features such as ti
 
 ## 📊 Results
 
-**Baseline model**: Logistic Regression
-Model evaluation metrics on the test data:
-- **Accuracy**: ~99.45%
-- **Precision**: ~91.00%
-- **Recall (Sensitivity)**: ~81.50%
-- **F1-score**: ~86.00%
-- **ROC-AUC Score**: ~97.80%
-**Key metrics**: Achieves high recall and precision on the minority (fraud) class and handles heavy class imbalance with proper evaluation focus.
-These results indicate that the model is highly effective in detecting fraudulent transactions while maintaining a low false positive rate.
+1. **Baseline model**: Logistic Regression
+2. Model evaluation metrics on the test data:
+   - **Accuracy**: ~99.45%
+   - **Precision**: ~91.00%
+   - **Recall (Sensitivity)**: ~81.50%
+   - **F1-score**: ~86.00%
+   - **ROC-AUC Score**: ~97.80%
+3. **Key metrics**: Achieves high recall and precision on the minority (fraud) class and handles heavy class imbalance with proper evaluation focus.
+4. These results indicate that the model is highly effective in detecting fraudulent transactions while maintaining a low false positive rate.
 
 ## Prerequisites
 

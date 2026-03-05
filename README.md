@@ -68,10 +68,6 @@ Detect fraudulent credit card transactions using transaction features such as ti
 - Python 3.7 or above
 - Jupyter Notebook
 
-## License
-
-This project is licensed under the MIT License.
-
 *Happy coding! If you find this project useful, give it a star ⭐ and consider contributing!*
 
 ##
